@@ -2,7 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userBean" class="com.yejunyu.testCase.User"/>
+    <bean id="userBean" class="com.yejunyu.testCase.User">
+        <property name="name" value="哈哈"/>
+        <property name="age" value="1"/>
+    </bean>
 
     <bean id="userDaoBean" class="com.yejunyu.dao.UserDao"/>
     <bean id="vipDaoBean" class="com.yejunyu.dao.VipDao"/>

@@ -41,4 +41,11 @@ public class Test1 {
         UserService userService = classPathXmlApplicationContext.getBean("userServiceBean", UserService.class);
         userService.save();
     }
+
+    @Test
+    public void testClass() {
+        BeanFactory classPathXmlApplicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        User userBean = classPathXmlApplicationContext.getBean("userBean", User.class);
+        System.out.println(userBean);
+    }
 }
