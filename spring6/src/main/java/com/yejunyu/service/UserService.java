@@ -30,4 +30,7 @@ public class UserService {
     public void save() {
         userDao.insert();
     }
+
+    public UserService() {
+    }
 }
